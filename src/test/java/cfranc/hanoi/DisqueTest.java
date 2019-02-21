@@ -26,4 +26,14 @@ public class DisqueTest {
 		//TODO : à compléter
 	}
 
+	@Test
+	public void testCompareTo_EqualThan_Zero() {
+		Disque petit = new Disque(1);
+		Disque moyen = new Disque(2);
+		Disque grand = new Disque(3);
+		assertEquals(0, grand.compareTo(grand));
+		assertEquals(0, moyen.compareTo(moyen));
+		//TODO : à compléter
+	}
+
 }
