@@ -5,6 +5,10 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class DisqueTest {
+	
+	Disque dSmall = new Disque(1);
+	Disque dMedium = new Disque(2);
+	Disque dTall = new Disque(3);
 
 	@Test
 	public void testCompareTo() {
@@ -16,4 +20,10 @@ public class DisqueTest {
 		//TODO : à compléter
 	}
 
+	@Test
+	public void compareTo_SmallMedium_Negative(){
+		int expected = -1;
+		int actual = dSmall.compareTo(dMedium);
+		assertEquals(expected, actual);
+	}
 }
